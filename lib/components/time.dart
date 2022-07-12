@@ -11,13 +11,13 @@ class Time extends StatefulWidget {
 class _TimeState extends State<Time> {
   TimeOfDay _timeOfDay = TimeOfDay.now();
   @override
-  void initState(){
+  void initState() {
     super.initState();
     Timer.periodic(const Duration(), (timer) {
-        setState(() {
-          _timeOfDay = TimeOfDay.now();
-        });
-     });
+      setState(() {
+        _timeOfDay = TimeOfDay.now();
+      });
+    });
   }
 
   @override
@@ -30,7 +30,9 @@ class _TimeState extends State<Time> {
           "${_timeOfDay.hourOfPeriod}:${_timeOfDay.minute}",
           style: Theme.of(context).textTheme.headline1,
         ),
-        const SizedBox(width: 10,),
+        const SizedBox(
+          width: 10,
+        ),
         RotatedBox(
             quarterTurns: 3,
             child: Text(

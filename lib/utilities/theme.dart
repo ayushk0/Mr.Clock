@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mr_clock/utilities/constant.dart';
 
-class ThemeProvider extends ChangeNotifier{
+class ThemeProvider extends ChangeNotifier {
   ThemeMode themeMode = ThemeMode.light;
   bool get isDarkMode => themeMode == ThemeMode.dark;
   void toggleTheme(bool isOn) {
@@ -10,7 +10,6 @@ class ThemeProvider extends ChangeNotifier{
     notifyListeners();
   }
 }
-
 
 // Our light/Primary Theme
 ThemeData themeData(BuildContext context) {

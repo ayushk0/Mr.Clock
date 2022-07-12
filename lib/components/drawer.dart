@@ -89,14 +89,14 @@ class MyDrawer extends StatelessWidget {
 
   Align listHeader(BuildContext context, Size size, String text) {
     return Align(
-            alignment: Alignment.centerLeft,
-            child: Text(
-              text,
-              style: Theme.of(context)
-                  .textTheme
-                  .bodyText2
-                  ?.copyWith(fontSize: size.width * 0.04),
-            ),
-          );
+      alignment: Alignment.centerLeft,
+      child: Text(
+        text,
+        style: Theme.of(context)
+            .textTheme
+            .bodyText2
+            ?.copyWith(fontSize: size.width * 0.04),
+      ),
+    );
   }
 }
