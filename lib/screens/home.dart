@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mr_clock/components/body.dart';
+import 'package:mr_clock/components/drawer.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -8,6 +9,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
+      drawer: const MyDrawer(),
       appBar: buildAppBar(context, size),
       body: const Body(),
     );
@@ -15,12 +17,18 @@ class HomeScreen extends StatelessWidget {
 
   AppBar buildAppBar(BuildContext context, Size size) {
     return AppBar(
-      leading: IconButton(
-        onPressed: () {},
-        icon: SvgPicture.asset(
-          'assets/icons/settings.svg',
-          color: Theme.of(context).iconTheme.color,
-        ),
+      leading: Builder(
+        builder: (BuildContext context) {
+          return IconButton(
+            onPressed: () {
+              Scaffold.of(context).openDrawer();
+            },
+            icon: SvgPicture.asset(
+              'assets/icons/settings.svg',
+              color: Theme.of(context).iconTheme.color,
+            ),
+          );
+        },
       ),
       actions: [buildAddButton(size, context)],
     );

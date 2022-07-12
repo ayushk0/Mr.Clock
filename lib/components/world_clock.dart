@@ -26,7 +26,7 @@ class _WorldClockState extends State<WorldClock> {
   @override
   void initState() {
     super.initState();
-    Timer.periodic(Duration(), (timer) {
+    Timer.periodic(const Duration(), (timer) {
       setState(() {
         _dateTime = TimeOfDay.fromDateTime(DateTime.now()
             .toUtc()
