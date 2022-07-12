@@ -45,7 +45,7 @@ class MyDrawer extends StatelessWidget {
               ),
             ),
             const Divider(),
-            ListHeader(context, size, "APPEARANCE"),
+            listHeader(context, size, "APPEARANCE"),
             Row(
               children: [
                 const Icon(Icons.nightlight_round_sharp),
@@ -65,7 +65,7 @@ class MyDrawer extends StatelessWidget {
               ],
             ),
             const Divider(),
-            ListHeader(context, size, "ABOUT"),
+            listHeader(context, size, "ABOUT"),
             Row(
               children: const [
                 Icon(Icons.settings_suggest_outlined),
@@ -87,7 +87,7 @@ class MyDrawer extends StatelessWidget {
     );
   }
 
-  Align ListHeader(BuildContext context, Size size, String text) {
+  Align listHeader(BuildContext context, Size size, String text) {
     return Align(
             alignment: Alignment.centerLeft,
             child: Text(
