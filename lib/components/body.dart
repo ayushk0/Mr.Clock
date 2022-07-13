@@ -36,7 +36,7 @@ class _BodyState extends State<Body> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "New Delhi, INDIA | ",
+                  (timeZone == "IST") ? "New Delhi, INDIA | " : "Local | ",
                   style: Theme.of(context).textTheme.bodyText1,
                 ),
                 Text(

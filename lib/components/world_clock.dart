@@ -79,7 +79,7 @@ class _WorldClockState extends State<WorldClock> {
                     ),
                     const Spacer(),
                     Text(
-                      "${_dateTime.hour}:${_dateTime.minute}",
+                      "${_dateTime.hourOfPeriod}:${_dateTime.minute}",
                       style: Theme.of(context)
                           .textTheme
                           .headline4
