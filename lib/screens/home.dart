@@ -39,7 +39,8 @@ class HomeScreen extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: InkWell(
-        onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context)=> const WorldScreen())),
+        onTap: () => Navigator.push(context,
+            MaterialPageRoute(builder: (context) => const WorldScreen())),
         child: Container(
           width: size.width * 0.1,
           decoration: BoxDecoration(

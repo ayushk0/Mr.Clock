@@ -58,27 +58,28 @@ class _WorldTimeState extends State<WorldTime> {
             ),
             Column(
               children: [
-                Text(
-                  widget.dCity,
-                  style: GoogleFonts.poppins(
-                    fontSize: size.width * 0.05,
-                    color: Theme.of(context).iconTheme.color,
-                    fontWeight: FontWeight.w500,
-                  )
-                ),
+                Text(widget.dCity,
+                    style: GoogleFonts.poppins(
+                      fontSize: size.width * 0.05,
+                      color: Theme.of(context).iconTheme.color,
+                      fontWeight: FontWeight.w500,
+                    )),
                 Text(locTime.timeZoneName,
-                style: GoogleFonts.poppins(
-                    color: Theme.of(context).iconTheme.color,
-                  )),
+                    style: GoogleFonts.poppins(
+                      color: Theme.of(context).iconTheme.color,
+                    )),
               ],
             ),
             const Spacer(),
             Text(
               '${locTime.hour}:${locTime.minute}',
-              style: Theme.of(context).textTheme.headline2?.copyWith(fontSize: 25),
+              style:
+                  Theme.of(context).textTheme.headline2?.copyWith(fontSize: 25),
             ),
-            Text(':${locTime.second}',
-            style: Theme.of(context).textTheme.headline2?.copyWith(fontSize: 20),
+            Text(
+              ':${locTime.second}',
+              style:
+                  Theme.of(context).textTheme.headline2?.copyWith(fontSize: 20),
             ),
           ],
         ),
