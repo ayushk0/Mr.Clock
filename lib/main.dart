@@ -3,9 +3,11 @@ import 'package:flutter/services.dart';
 import 'package:mr_clock/screens/home.dart';
 import 'package:mr_clock/utilities/theme.dart';
 import 'package:provider/provider.dart';
+import 'package:timezone/data/latest.dart' as tz;
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  tz.initializeTimeZones();
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,

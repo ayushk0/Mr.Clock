@@ -30,6 +30,7 @@ ThemeData themeData(BuildContext context) {
       bodyText2: const TextStyle(color: kBodyTextColorLight),
       headline4: const TextStyle(color: kTitleTextLightColor, fontSize: 32),
       headline1: const TextStyle(color: kTitleTextLightColor, fontSize: 80),
+      headline2: const TextStyle(color: kSecondaryDarkColor),
     ),
   );
 }
@@ -53,6 +54,7 @@ ThemeData darkThemeData(BuildContext context) {
       bodyText2: const TextStyle(color: kBodyTextColorDark),
       headline4: const TextStyle(color: kTitleTextDarkColor, fontSize: 32),
       headline1: const TextStyle(color: kTitleTextDarkColor, fontSize: 80),
+      headline2: const TextStyle(color: kSecondaryLightColor),
     ),
   );
 }

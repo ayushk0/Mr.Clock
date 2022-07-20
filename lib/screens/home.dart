@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mr_clock/components/body.dart';
 import 'package:mr_clock/components/drawer.dart';
+import 'package:mr_clock/screens/world.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -38,7 +39,7 @@ class HomeScreen extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: InkWell(
-        onTap: () {},
+        onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context)=> const WorldScreen())),
         child: Container(
           width: size.width * 0.1,
           decoration: BoxDecoration(
