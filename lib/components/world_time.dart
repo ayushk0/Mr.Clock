@@ -74,12 +74,7 @@ class _WorldTimeState extends State<WorldTime> {
             Text(
               '${locTime.hour}:${locTime.minute}',
               style:
-                  Theme.of(context).textTheme.headline2?.copyWith(fontSize: 25),
-            ),
-            Text(
-              ':${locTime.second}',
-              style:
-                  Theme.of(context).textTheme.headline2?.copyWith(fontSize: 20),
+                  Theme.of(context).textTheme.headline2?.copyWith(fontSize: 30),
             ),
           ],
         ),

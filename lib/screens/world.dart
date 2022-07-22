@@ -167,7 +167,7 @@ class WorldScreen extends StatelessWidget {
                   region: 'Africa',
                   city: 'Johannesburg',
                   svgIcon: 'assets/icons/city.svg',
-                  dCity: 'Johannesburg'),
+                  dCity: 'Johannesburg, ZAF'),
               WorldTime(
                   region: 'Asia',
                   city: 'Karachi',

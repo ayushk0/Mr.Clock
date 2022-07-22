@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mr_clock/screens/world.dart';
 import 'package:mr_clock/utilities/theme.dart';
 import 'package:provider/provider.dart';
 
@@ -43,6 +44,22 @@ class MyDrawer extends StatelessWidget {
                 "assets/icons/softegy.svg",
                 width: size.width * 0.2,
               ),
+            ),
+            const Divider(),
+            listHeader(context, size, "EXPLORE"),
+            Row(
+              children: [
+                const Icon(Icons.access_time_rounded),
+                TextButton(
+                    onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const WorldScreen())),
+                    child: Text(
+                      "World Clock",
+                      style: Theme.of(context).textTheme.bodyText1,
+                    )),
+              ],
             ),
             const Divider(),
             listHeader(context, size, "APPEARANCE"),
